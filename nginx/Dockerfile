@@ -1,4 +1,4 @@
 FROM nginx:latest
 EXPOSE 80
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx-for-compose.conf /etc/nginx/nginx.conf
 CMD ["nginx", "-g", "daemon off;"]
